@@ -2,14 +2,14 @@
 <html lang="pt-BR" class="dark">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style>
     * {
@@ -18,12 +18,12 @@
   </style>
   <style type="text/tailwindcss">
     @custom-variant dark (&:where(.dark, .dark *));
-    @theme{
-      --color-cinza: #121212; 
-      --color-cinza-claro: #1A1A1A; 
-      --color-green: #244033;
-    }
-  </style>
+      @theme {
+        --color-cinza: #121212;
+        --color-cinza-claro: #1a1a1a;
+        --color-green: #244033;
+      }
+    </style>
 </head>
 
 <body class="dark:bg-cinza dark:text-white">
@@ -31,32 +31,41 @@
     <a href="">
       <h1 class="text-[20px] font-bold">John Vieira</h1>
     </a>
-    <nav class="flex gap-4 fill-cinza lg:pr-4">
-      <a href="" class="hover:scale-125 duration-150"><box-icon type='logo' name='github'></box-icon></a>
-      <a href="" class="hover:scale-125 duration-150"><box-icon type='logo' name='linkedin'></box-icon></a>
-      <a href="" class="hover:scale-125 duration-150"><box-icon type='logo' name='instagram'></box-icon></a>
+    <nav class="flex gap-4 fill-white lg:pr-4">
+      <a href="" class="hover:scale-125 duration-150"><box-icon type="logo" name="github"></box-icon></a>
+      <a href="" class="hover:scale-125 duration-150"><box-icon type="logo" name="linkedin"></box-icon></a>
+      <a href="" class="hover:scale-125 duration-150"><box-icon type="logo" name="instagram"></box-icon></a>
     </nav>
   </header>
-  <section class="flex flex-col items-end lg:flex-row-reverse lg:justify-between lg:items-center lg:px-15 xl:px-[120px]">
-    <div class="w-[260px] h-[450px] bg-green rounded-bl-[30px] flex justify-center items-center text-cinza lg:rounded-br-[30px] xl:w-[350px] xl:h-[500px]">
-      Minha Foto
+  <section
+    class="flex flex-col items-end lg:flex-row-reverse lg:justify-between lg:items-center lg:px-15 xl:px-[120px]">
+    <div
+      class="w-[260px] h-[450px] bg-green rounded-bl-[30px] flex justify-center items-end overflow-hidden text-white lg:rounded-br-[30px] xl:w-[350px] xl:h-[500px]">
+      <img src="./img/photo.png" alt="">
     </div>
     <div class="text-center px-9 mt-6 lg:w-[400px] lg:text-left lg:p-0">
       <h3 class="font-bold text-green text-[24px] mb-1">Seja bem-vindo(a)</h3>
-      <h2 class="font-bold text-[36px] mb-10">Eu sou <span class="border-b-[3px] border-green">John</span></h2>
-      <p class="leading-[32px] mb-10">Desenvolvedor Full Stack de Fortaleza-CE, apaixonado por transformar ideias em
-        aplicações web intuitivas e impactantes.</p>
-      <a href="" class="leading-[50px] px-3 inline-block relative group hover:text-cinza duration-150">Vamos Conversar <div class="w-full h-[3px] bg-green absolute bottom-0 left-0 group-hover:h-full -z-10 rounded-t-[10px] "></div></a>
+      <h2 class="font-bold text-[36px] mb-10">
+        Eu sou <span class="border-b-[3px] border-green">John</span>
+      </h2>
+      <p class="leading-[32px] mb-10">
+        Desenvolvedor Full Stack de Fortaleza-CE, apaixonado por transformar
+        ideias em aplicações web intuitivas e impactantes.
+      </p>
+      <a href="" class="leading-[50px] px-3 inline-block relative group ">Vamos Conversar
+        <div class="w-full h-[3px] bg-green absolute bottom-0 left-0 group-hover:h-full -z-10 rounded-t-[10px] duration-150"></div>
+      </a>
     </div>
   </section>
-  <section class="flex fill-white align-center justify-center gap-10 ">
-    <box-icon type='logo' name='html5'></box-icon>
-    <box-icon type='logo' name='css3'></box-icon>
-    <box-icon type='logo' name='tailwind-css'></box-icon>
-    <box-icon type='logo' name='javascript'></box-icon>
-    <box-icon type='logo' name='react'></box-icon>
-    <box-icon type='logo' name='nodejs'></box-icon>
-    <box-icon type='logo' name='typescript'></box-icon>
+  <div class="w-full "></div>
+  <section class="flex fill-white items-center justify-center gap-10">
+    <box-icon type="logo" name="html5" class="hover:scale-125 duration-150"></box-icon>
+    <box-icon type="logo" name="css3" class="hover:scale-125 duration-150"></box-icon>
+    <box-icon type="logo" name="tailwind-css" class="hover:scale-125 duration-150"></box-icon>
+    <box-icon type="logo" name="javascript" class="hover:scale-125 duration-150"></box-icon>
+    <box-icon type="logo" name="react" class="hover:scale-125 duration-150"></box-icon>
+    <box-icon type="logo" name="nodejs" class="hover:scale-125 duration-150"></box-icon>
+    <box-icon type="logo" name="typescript" class="hover:scale-125 duration-150"></box-icon>
   </section>
 
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
